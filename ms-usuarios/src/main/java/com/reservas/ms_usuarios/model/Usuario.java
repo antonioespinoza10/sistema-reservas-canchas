@@ -1,4 +1,4 @@
-package com.reservas.ms_usuarios;
+package com.reservas.ms_usuarios.model;
 
 import jakarta.persistence.*;
 
@@ -12,16 +12,20 @@ public class Usuario {
 
     private String nombre;
     private String email;
-    private String rol;
+    private String password; // Agregado para que coincida con XAMPP
+    private String rol;      // Agregado para que coincida con XAMPP
 
     public Usuario() {}
 
+    // Getters y Setters manuales
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
     public String getRol() { return rol; }
     public void setRol(String rol) { this.rol = rol; }
 }
